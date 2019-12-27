@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EightQueens.ConsoleUI/1.0.0": {
+        "dependencies": {
+          "EightQueens.Logic": "1.0.0"
+        },
+        "runtime": {
+          "EightQueens.ConsoleUI.dll": {}
+        }
+      },
+      "EightQueens.Logic/1.0.0": {
+        "runtime": {
+          "EightQueens.Logic.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EightQueens.ConsoleUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EightQueens.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
