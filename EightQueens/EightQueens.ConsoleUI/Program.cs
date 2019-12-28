@@ -7,7 +7,7 @@ namespace EightQueens.ConsoleUI
         static void Main(string[] args)
         {
             Engine engine = new Engine(new ConsoleRenderer());
-            engine.FindPositionsOfAllQueens(new Position(2, 0));
+            engine.FindPositionsOfAllQueens(new Position(0, 10));
         }
     }
 }

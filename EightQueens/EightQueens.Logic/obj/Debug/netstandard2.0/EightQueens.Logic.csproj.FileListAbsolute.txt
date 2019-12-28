@@ -5,3 +5,4 @@ C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\Ei
 C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.AssemblyInfo.cs
 C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.dll
 C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.pdb
+C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.csprojAssemblyReference.cache

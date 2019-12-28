@@ -26,6 +26,8 @@
 
         #region Properties
 
+        public int CountFigures { get; private set; }
+
         //TODO remove this
         public BoardSquare[,] boardSquares { get { return this.board; } }
 
@@ -41,6 +43,8 @@
             {
                 attack.SetAttackedPositions(board, figure, position);
             }
+
+            CountFigures++;
         }
 
         public void RemoveFigure(IFigure figure, Position position)
@@ -51,6 +55,8 @@
             {
                 attack.ResetAttackedPositions(board, figure, position);
             }
+
+            CountFigures--;
         }
 
         private void Initialize(BoardSquare[,] board)

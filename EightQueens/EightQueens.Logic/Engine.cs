@@ -3,18 +3,17 @@
     using EightQueens.Logic.Figures.Contracts;
     using Figures;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Engine
     {
         #region Declarations
 
-        private const int MAX_COUNT_OF_QUEENS = 8;
+        private const int COUNT_OF_QUEENS = 8;
 
         private IRenderer renderer;
 
         private ChessBoard chessBoard;
-
-        private Stack<Queen> queens;
 
         #endregion
 
@@ -24,60 +23,68 @@
         {
             this.renderer = renderer;
             this.chessBoard = new ChessBoard();
-            this.queens = new Stack<Queen>();
-
-            InitializeQueens(queens);
         }
 
         #endregion
 
         #region Properties
+
+        public ChessBoard chessBoardResult { get; private set; }
+
         #endregion
 
         #region Methods
 
-        public void FindPositionsOfAllQueens(Position positionOfFirstQueen)
-        {
-            Queen firstQueen = this.queens.Pop();
-            this.chessBoard.AddFigure(firstQueen, positionOfFirstQueen);
+        public bool IsRenderer = false;
 
-            while (queens.Count != 0)
+        public bool Find(ChessBoard chessBoard) 
+        {
+            if (chessBoard.CountFigures == COUNT_OF_QUEENS && !IsRenderer)
             {
-                //TODO
-                break;
+                this.renderer.RenderBoard(chessBoard.boardSquares);
+                IsRenderer = true;
+                return true;
             }
 
-            this.renderer.RenderBoard(this.chessBoard.boardSquares);
+            Queen queen = new Queen();
+
+            foreach (var position in GetSpareSquare(chessBoard.boardSquares))
+            {
+                chessBoard.AddFigure(queen, position);
+
+                if (!Find(chessBoard))
+                {
+                    chessBoard.RemoveFigure(queen, position);
+                }
+            }
+
+            return false;
         }
 
-        private Position GetNextSpareSquare(BoardSquare[,] board, int positionPointer)
+        public void FindPositionsOfAllQueens(Position positionOfFirstQueen)
         {
-            int counter = 0;
+            this.chessBoard.AddFigure(new Queen(), positionOfFirstQueen);
 
-            for (int row = 0; row < 8; row++)
+            Find(this.chessBoard);
+
+        }
+
+        private List<Position> GetSpareSquare(BoardSquare[,] board)
+        {
+            var positions = new List<Position>();
+
+            for (int row = 0; row < board.GetLength(0); row++)
             {
-                for (int col = 0; col < 8; col++)
+                for (int col = 0; col < board.GetLength(1); col++)
                 {
                     if (!board[row, col].IsAttacked)
                     {
-                        if (counter == positionPointer)
-                        {
-                            return board[row, col].Position;
-                        }
-                        counter++;
+                        positions.Add(board[row, col].Position);
                     }
                 }
             }
 
-            return null;
-        }
-
-        private void InitializeQueens(Stack<Queen> figures)
-        {
-            for (int i = 1; i <= MAX_COUNT_OF_QUEENS; i++)
-            {
-                figures.Push(new Queen());
-            }
+            return positions;
         }
 
         #endregion
