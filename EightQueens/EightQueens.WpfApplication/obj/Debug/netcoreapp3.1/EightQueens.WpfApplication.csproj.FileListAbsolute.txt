@@ -20,3 +20,5 @@ C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\bin\Debug\netcorea
 C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\Views\EightQueensView.g.cs
 C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\Views\EightQueensView.baml
 C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\EightQueens.WpfApplication.csproj.CopyComplete
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\Styles\Board.baml
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\App.baml

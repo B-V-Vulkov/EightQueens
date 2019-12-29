@@ -5,4 +5,3 @@ C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.Assemb
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.dll
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.pdb
-C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache

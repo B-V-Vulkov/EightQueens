@@ -20,6 +20,8 @@
 
         public Position Position { get; }
 
+        public ChessColor ChessColor { get; set; }
+
         #endregion
     }
 }

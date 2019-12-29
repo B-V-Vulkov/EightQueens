@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\App.xaml
-21491980585
+3-1135654862
 
 9950183535
 193-1856317808
-MainWindow.xaml;Views\EightQueensView.xaml;
+MainWindow.xaml;Styles\Board.xaml;Views\EightQueensView.xaml;
 
-False
+True
 

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EightQueens.WpfApplication.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="1000"
+      d:DesignHeight="800" d:DesignWidth="1000"
       Title="EightQueensView">
 
     <Grid>
@@ -30,51 +30,326 @@
         </StackPanel>
 
         <Grid Grid.Column="1"
-              Grid.Row="0">
+              Grid.Row="0"
+              Margin="20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <StackPanel Grid.ColumnSpan="14"
+                        Grid.Row="0"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="13"
+                        Grid.Row="1"
+                        Grid.RowSpan="13"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="13"
+                        Grid.Row="13"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="0"
+                        Grid.Row="1"
+                        Grid.RowSpan="12"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
 
+            <StackPanel Grid.Column="2" 
+                        Grid.ColumnSpan="10"
+                        Grid.Row="2"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="11"
+                        Grid.Row="3"
+                        Grid.RowSpan="8"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="2"
+                        Grid.ColumnSpan="10"
+                        Grid.Row="11"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="2"
+                        Grid.Row="3"
+                        Grid.RowSpan="8"
+                        Background="Black"
+                        Opacity="0.5">
+            </StackPanel>
+
+            <StackPanel Grid.Column="1"
+                        Grid.ColumnSpan="12"
+                        Grid.Row="1"
+                        Background="White"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="12"
+                        Grid.Row="2"
+                        Grid.RowSpan="10"
+                        Background="White"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="1"
+                        Grid.ColumnSpan="12"
+                        Grid.Row="12"
+                        Background="White"
+                        Opacity="0.5">
+            </StackPanel>
+            <StackPanel Grid.Column="1"
+                        Grid.Row="2"
+                        Grid.RowSpan="10"
+                        Background="White"
+                        Opacity="0.5">
+            </StackPanel>
+
+
+            <!--Board Notation-->
+            <!--Top-->
+            <TextBlock Grid.Column="3"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="A">
+            </TextBlock>
+            <TextBlock Grid.Column="4"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="B">
+            </TextBlock>
+            <TextBlock Grid.Column="5"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="C">
+            </TextBlock>
+            <TextBlock Grid.Column="6"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="D">
+            </TextBlock>
+            <TextBlock Grid.Column="7"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="E">
+            </TextBlock>
+            <TextBlock Grid.Column="8"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="F">
+            </TextBlock>
+            <TextBlock Grid.Column="9"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="G">
+            </TextBlock>
+            <TextBlock Grid.Column="10"
+                       Grid.Row="1"
+                       Style="{StaticResource BoardNotations}"
+                       Text="H">
+            </TextBlock>
+            
+            <!--Bottom-->
+            <TextBlock Grid.Column="3"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="A">
+            </TextBlock>
+            <TextBlock Grid.Column="4"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="B">
+            </TextBlock>
+            <TextBlock Grid.Column="5"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="C">
+            </TextBlock>
+            <TextBlock Grid.Column="6"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="D">
+            </TextBlock>
+            <TextBlock Grid.Column="7"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="E">
+            </TextBlock>
+            <TextBlock Grid.Column="8"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="F">
+            </TextBlock>
+            <TextBlock Grid.Column="9"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="G">
+            </TextBlock>
+            <TextBlock Grid.Column="10"
+                       Grid.Row="12"
+                       Style="{StaticResource BoardNotations}"
+                       Text="H">
+            </TextBlock>
+
+            <!--Right-->
+            <TextBlock Grid.Column="12"
+                       Grid.Row="10"
+                       Style="{StaticResource BoardNotations}"
+                       Text="1">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="9"
+                       Style="{StaticResource BoardNotations}"
+                       Text="2">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="8"
+                       Style="{StaticResource BoardNotations}"
+                       Text="3">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="7"
+                       Style="{StaticResource BoardNotations}"
+                       Text="4">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="6"
+                       Style="{StaticResource BoardNotations}"
+                       Text="5">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="5"
+                       Style="{StaticResource BoardNotations}"
+                       Text="6">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="4"
+                       Style="{StaticResource BoardNotations}"
+                       Text="7">
+            </TextBlock>
+            <TextBlock Grid.Column="12"
+                       Grid.Row="3"
+                       Style="{StaticResource BoardNotations}"
+                       Text="8">
+            </TextBlock>
+
+            <!--Left-->
+            <TextBlock Grid.Column="1"
+                       Grid.Row="10"
+                       Style="{StaticResource BoardNotations}"
+                       Text="1">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="9"
+                       Style="{StaticResource BoardNotations}"
+                       Text="2">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="8"
+                       Style="{StaticResource BoardNotations}"
+                       Text="3">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="7"
+                       Style="{StaticResource BoardNotations}"
+                       Text="4">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="6"
+                       Style="{StaticResource BoardNotations}"
+                       Text="5">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="5"
+                       Style="{StaticResource BoardNotations}"
+                       Text="6">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="4"
+                       Style="{StaticResource BoardNotations}"
+                       Text="7">
+            </TextBlock>
+            <TextBlock Grid.Column="1"
+                       Grid.Row="3"
+                       Style="{StaticResource BoardNotations}"
+                       Text="8">
+            </TextBlock>
+
+
+
+
+
+
+
+
+            <ItemsControl Grid.Column="3"
+                          Grid.Row="3"
+                          Grid.ColumnSpan="8"
+                          Grid.RowSpan="8"
+
+                      ItemsSource="{Binding Board}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="8" Rows="8"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border>
+
+                            <StackPanel>
+                                <StackPanel.Style>
+                                    <Style TargetType="StackPanel">
+                                        <Setter Property="Background" Value="#40FFFFFF"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding ChessColor}" Value="Black">
+                                                <Setter Property="Background" Value="#BF000000"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </StackPanel.Style>
+                                <!--<Image Source="../Resources/Crown/Crown.png" Margin="10" Opacity="1"/>-->
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Grid>
         
-        <ItemsControl Grid.Column="1"
-                      Grid.Row="0"
-                      Margin="20"
-                      Width="700"
-                      Height="700"
-                      ItemsSource="{Binding Board}">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <UniformGrid Columns="8" Rows="8"/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Border>
-                        <Border.Background>
-                            <ImageBrush ImageSource="{Binding BackgroundImage}"/>
-                        </Border.Background>
-                        <StackPanel>
 
-                            <TextBlock Text="{Binding Color}"/>
-                            <Image Source="../Resources/Crown/Crown.png" Margin="10"/>
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
 
 
 

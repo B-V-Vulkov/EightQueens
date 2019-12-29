@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:EightQueens.WpfApplication"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="./Styles/Board.xaml"/>
     </Application.Resources>
 </Application>
