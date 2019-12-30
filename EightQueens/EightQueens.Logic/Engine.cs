@@ -1,9 +1,9 @@
 ﻿namespace EightQueens.Logic
 {
-    using EightQueens.Logic.Figures.Contracts;
-    using Figures;
     using System.Collections.Generic;
-    using System.Linq;
+
+    using Figures;
+    using global::Common;
 
     public class Engine
     {
@@ -11,38 +11,41 @@
 
         private const int COUNT_OF_QUEENS = 8;
 
-        private IRenderer renderer;
-
-        private ChessBoard chessBoard;
+        private bool isFindAllPosition = false;
 
         #endregion
 
         #region Initializations
 
-        public Engine(IRenderer renderer)
+        public Engine()
         {
-            this.renderer = renderer;
-            this.chessBoard = new ChessBoard();
+            this.Board = new ChessBoard();
         }
 
         #endregion
 
         #region Properties
 
-        public ChessBoard chessBoardResult { get; private set; }
+        public ChessBoard Board { get; private set; }
 
         #endregion
 
         #region Methods
 
-        public bool IsRenderer = false;
-
-        public bool Find(ChessBoard chessBoard) 
+        public void Run(Position positionOfFirstQueen)
         {
-            if (chessBoard.CountFigures == COUNT_OF_QUEENS && !IsRenderer)
+            var newBoard = new ChessBoard();
+            newBoard.AddFigure(new Queen(), positionOfFirstQueen);
+
+            GetAllPositions(newBoard);
+        }
+
+        private bool GetAllPositions(ChessBoard chessBoard)
+        {
+            if (chessBoard.CountFigures == COUNT_OF_QUEENS && !isFindAllPosition)
             {
-                this.renderer.RenderBoard(chessBoard.boardSquares);
-                IsRenderer = true;
+                this.Board = chessBoard;
+                isFindAllPosition = true;
                 return true;
             }
 
@@ -52,21 +55,13 @@
             {
                 chessBoard.AddFigure(queen, position);
 
-                if (!Find(chessBoard))
+                if (!GetAllPositions(chessBoard))
                 {
                     chessBoard.RemoveFigure(queen, position);
                 }
             }
 
             return false;
-        }
-
-        public void FindPositionsOfAllQueens(Position positionOfFirstQueen)
-        {
-            this.chessBoard.AddFigure(new Queen(), positionOfFirstQueen);
-
-            Find(this.chessBoard);
-
         }
 
         private List<Position> GetSpareSquare(BoardSquare[,] board)

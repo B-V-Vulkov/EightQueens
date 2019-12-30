@@ -9,7 +9,9 @@
         public EightQueensView()
         {
             InitializeComponent();
-            this.DataContext = new EightQueensViewModel();
+            EightQueensViewModel eightQueensViewModel = new EightQueensViewModel();
+            this.DataContext = eightQueensViewModel;
+            this.PlayButton.Click += eightQueensViewModel.Play;
         }
     }
 }

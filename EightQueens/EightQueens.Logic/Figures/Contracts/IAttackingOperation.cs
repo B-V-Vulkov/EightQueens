@@ -1,4 +1,6 @@
-﻿namespace EightQueens.Logic.Figures.Contracts
+﻿using Common;
+
+namespace EightQueens.Logic.Figures.Contracts
 {
     public interface IAttackingOperation
     {

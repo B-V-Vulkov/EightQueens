@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vulko\\.nuget\\packages\\": {}
+    "C:\\Users\\borislav.valkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj",
+      "projectUniqueName": "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
-      "outputPath": "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\obj\\",
+      "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\borislav.valkov\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\EightQueens\\EightQueens\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vulko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\borislav.valkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

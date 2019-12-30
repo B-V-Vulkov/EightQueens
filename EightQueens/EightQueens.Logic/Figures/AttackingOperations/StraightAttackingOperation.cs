@@ -3,6 +3,7 @@
     using System.Collections.Generic;
 
     using Contracts;
+    using global::Common;
 
     public class StraightAttackingOperation : IAttackingOperation
     {

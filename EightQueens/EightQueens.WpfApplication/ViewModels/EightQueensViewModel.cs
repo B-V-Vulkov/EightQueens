@@ -1,87 +1,49 @@
 ﻿namespace EightQueens.WpfApplication.ViewModels
 {
-    using Common;
+    using EightQueens.Logic;
     using EightQueens.WpfApplication.Models;
     using System.Collections.Generic;
 
     public class EightQueensViewModel
     {
-        public List<BoardSquare> Board { get; set; }
+        #region Declarations
+
+        private Engine engine;
+
+        #endregion
+
+        #region Initializations
 
         public EightQueensViewModel()
         {
-            this.Board = new List<BoardSquare>();
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
+            this.engine = new Engine();
 
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
+            this.Board = new List<Square>();
 
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White) { UrlFigureImage = "../Resources/Crown/Crown.png" });
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black) { UrlFigureImage = "../Resources/Crown/Crown.png" });
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
-            Board.Add(new BoardSquare(ChessColor.White));
-            Board.Add(new BoardSquare(ChessColor.Black));
+            Initialize(this.Board);
         }
+
+        #endregion
+
+        #region Properties
+
+        public List<Square> Board { get; set; }
+
+        #endregion
+
+        #region Methods
+
+        public void Play(object sender, System.Windows.RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Initialize(List<Square> board)
+        {
+            this.engine.Run(new Common.Position(0, 0));
+
+        }
+
+        #endregion
     }
 }

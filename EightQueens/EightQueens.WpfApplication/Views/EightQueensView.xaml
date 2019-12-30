@@ -24,23 +24,8 @@
                        Foreground="White"
                        Text="Position of Queen">
             </TextBlock>
-            <Button Content="djskdjskdj">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Content" Value="Play"/>
-                        <Setter Property="FontSize" Value="20"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate>
-                                    <Border BorderBrush="Black"
-                                            BorderThickness="1"
-                                            CornerRadius="10">
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
+            <Button x:Name="PlayButton" 
+                    Content="Play">
             </Button>
 
         </StackPanel>
@@ -197,7 +182,7 @@
                        Style="{StaticResource BoardNotations}"
                        Text="H">
             </TextBlock>
-            
+
             <!--Bottom-->
             <TextBlock Grid.Column="3"
                        Grid.Row="12"
@@ -345,7 +330,6 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border>
-
                             <StackPanel>
                                 <StackPanel.Style>
                                     <Style TargetType="StackPanel">
@@ -364,12 +348,5 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </Grid>
-        
-
-
-
-
-
-
     </Grid>
 </Page>

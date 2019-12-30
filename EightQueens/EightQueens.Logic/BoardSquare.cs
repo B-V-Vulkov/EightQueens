@@ -2,6 +2,7 @@
 {
     using Common;
     using Figures.Contracts;
+    using global::Common;
     using System.Collections.Generic;
 
     public class BoardSquare

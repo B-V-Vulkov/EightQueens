@@ -2,9 +2,9 @@
 {
     using System.Collections.Generic;
 
-    using Common;
     using Contracts;
     using AttackingOperations;
+    using global::Common;
 
     public class Queen : IFigure
     {

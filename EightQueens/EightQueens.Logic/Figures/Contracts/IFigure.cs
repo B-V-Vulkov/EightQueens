@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using Common;
+    using global::Common;
 
     public interface IFigure
     {

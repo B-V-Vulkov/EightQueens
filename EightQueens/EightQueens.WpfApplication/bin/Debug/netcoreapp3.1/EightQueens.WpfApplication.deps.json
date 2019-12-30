@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "EightQueens.WpfApplication/1.0.0": {
         "dependencies": {
-          "Common": "1.0.0"
+          "Common": "1.0.0",
+          "EightQueens.Logic": "1.0.0"
         },
         "runtime": {
           "EightQueens.WpfApplication.dll": {}
@@ -17,6 +18,14 @@
       "Common/1.0.0": {
         "runtime": {
           "Common.dll": {}
+        }
+      },
+      "EightQueens.Logic/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "runtime": {
+          "EightQueens.Logic.dll": {}
         }
       }
     }
@@ -28,6 +37,11 @@
       "sha512": ""
     },
     "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EightQueens.Logic/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

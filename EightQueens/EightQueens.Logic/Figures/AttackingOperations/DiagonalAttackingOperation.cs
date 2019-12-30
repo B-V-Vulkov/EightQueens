@@ -4,6 +4,7 @@
     using System.Collections.Generic;
 
     using Contracts;
+    using global::Common;
 
     public class DiagonalAttackingOperation : IAttackingOperation
     {

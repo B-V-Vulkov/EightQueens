@@ -5,3 +5,10 @@ C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.Assemb
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.dll
 C:\SoftUni\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\Projects\EightQueens\EightQueens\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\Projects\EightQueens\EightQueens\Common\bin\Debug\netstandard2.0\Common.dll
+D:\Projects\EightQueens\EightQueens\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\Projects\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\Projects\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+D:\Projects\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.dll
+D:\Projects\EightQueens\EightQueens\Common\obj\Debug\netstandard2.0\Common.pdb

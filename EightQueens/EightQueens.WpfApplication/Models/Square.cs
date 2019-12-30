@@ -2,7 +2,7 @@
 {
     using Common;
 
-    public class BoardSquare : BaseModel
+    public class Square : BaseModel
     {
         #region Declarations
 
@@ -14,7 +14,7 @@
 
         #region Initializations
 
-        public BoardSquare(ChessColor chessColor)
+        public Square(ChessColor chessColor)
         {
             this.Color = chessColor;
         }

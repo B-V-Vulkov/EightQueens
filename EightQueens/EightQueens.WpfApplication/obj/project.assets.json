@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/Common.dll": {}
         }
+      },
+      "EightQueens.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EightQueens.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EightQueens.Logic.dll": {}
+        }
       }
     }
   },
@@ -19,27 +32,33 @@
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
+    },
+    "EightQueens.Logic/1.0.0": {
+      "type": "project",
+      "path": "../EightQueens.Logic/EightQueens.Logic.csproj",
+      "msbuildProject": "../EightQueens.Logic/EightQueens.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Common >= 1.0.0"
+      "Common >= 1.0.0",
+      "EightQueens.Logic >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vulko\\.nuget\\packages\\": {}
+    "C:\\Users\\borislav.valkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\EightQueens.WpfApplication.csproj",
+      "projectUniqueName": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\EightQueens.WpfApplication.csproj",
       "projectName": "EightQueens.WpfApplication",
-      "projectPath": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\EightQueens.WpfApplication.csproj",
-      "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
-      "outputPath": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\obj\\",
+      "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\EightQueens.WpfApplication.csproj",
+      "packagesPath": "C:\\Users\\borislav.valkov\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.WpfApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vulko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\borislav.valkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,8 +71,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj": {
-              "projectPath": "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj"
+            "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj": {
+              "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj"
+            },
+            "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj": {
+              "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj"
             }
           }
         }

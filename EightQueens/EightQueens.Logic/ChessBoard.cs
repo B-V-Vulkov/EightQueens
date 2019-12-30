@@ -1,7 +1,7 @@
 ﻿namespace EightQueens.Logic
 {
-    using Common;
     using EightQueens.Logic.Figures.Contracts;
+    using global::Common;
 
     public class ChessBoard
     {
