@@ -1,5 +1,6 @@
 ﻿namespace EightQueens.WpfApplication.ViewModels
 {
+    using Common;
     using EightQueens.WpfApplication.Models;
     using System.Collections.Generic;
 
@@ -10,77 +11,77 @@
         public EightQueensViewModel()
         {
             this.Board = new List<BoardSquare>();
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black});
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White) { UrlFigureImage = "../Resources/Crown/Crown.png" });
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black) { UrlFigureImage = "../Resources/Crown/Crown.png" });
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
 
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
-            Board.Add(new BoardSquare(new Common.Position(0, 1), string.Empty));
-            Board.Add(new BoardSquare(new Common.Position(0, 0), "../Resources/BlackSquares/BlackSquare_A1.png") { ChessColor = Common.ChessColor.Black });
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
+            Board.Add(new BoardSquare(ChessColor.White));
+            Board.Add(new BoardSquare(ChessColor.Black));
         }
     }
 }

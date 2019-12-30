@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <None Remove="Resources\Background\Background.jpg" />
-    <None Remove="Resources\BlackSquares\BlackSquare_A1.png" />
     <None Remove="Resources\Crown\Crown.png" />
   </ItemGroup>
 
@@ -18,7 +17,6 @@
 
   <ItemGroup>
     <Resource Include="Resources\Background\Background.jpg" />
-    <Resource Include="Resources\BlackSquares\BlackSquare_A1.png" />
     <Resource Include="Resources\Crown\Crown.png" />
   </ItemGroup>
 

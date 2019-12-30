@@ -2,26 +2,55 @@
 {
     using Common;
 
-    public class BoardSquare
+    public class BoardSquare : BaseModel
     {
+        #region Declarations
+
+        private ChessColor color;
+
+        private string urlFigureImage;
+
+        #endregion
+
         #region Initializations
 
-        public BoardSquare(Position position, string backgroundImage)
+        public BoardSquare(ChessColor chessColor)
         {
-            this.Position = position;
-            this.BackgroundImage = backgroundImage;
+            this.Color = chessColor;
         }
 
         #endregion
 
         #region Properties
 
-        public string BackgroundImage { get; }
+        public ChessColor Color
+        {
+            get
+            {
+                return this.color;
+            }
+            private set
+            {
+                this.color = value;
+            }
+        }
 
-        public Position Position { get; }
+        public string UrlFigureImage
+        {
+            get
+            {
+                return this.urlFigureImage;
+            }
+            set
+            {
+                this.urlFigureImage = value;
+                NotifyPropertyChanged();
+            }
+        }
 
-        public ChessColor ChessColor { get; set; }
+        #endregion
 
+        #region Methods
         #endregion
     }
 }

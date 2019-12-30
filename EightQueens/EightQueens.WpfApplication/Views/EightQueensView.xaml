@@ -24,7 +24,23 @@
                        Foreground="White"
                        Text="Position of Queen">
             </TextBlock>
-            <Button Content="Play">
+            <Button Content="djskdjskdj">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Content" Value="Play"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <Border BorderBrush="Black"
+                                            BorderThickness="1"
+                                            CornerRadius="10">
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
             </Button>
 
         </StackPanel>
@@ -335,13 +351,13 @@
                                     <Style TargetType="StackPanel">
                                         <Setter Property="Background" Value="#40FFFFFF"/>
                                         <Style.Triggers>
-                                            <DataTrigger Binding="{Binding ChessColor}" Value="Black">
+                                            <DataTrigger Binding="{Binding Color}" Value="Black">
                                                 <Setter Property="Background" Value="#BF000000"/>
                                             </DataTrigger>
                                         </Style.Triggers>
                                     </Style>
                                 </StackPanel.Style>
-                                <!--<Image Source="../Resources/Crown/Crown.png" Margin="10" Opacity="1"/>-->
+                                <Image Source="{Binding UrlFigureImage}" Margin="10" Opacity="1"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
