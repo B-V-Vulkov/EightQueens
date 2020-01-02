@@ -16,3 +16,7 @@ D:\Projects\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\E
 D:\Projects\EightQueens\EightQueens\EightQueens.Logic\bin\Debug\netstandard2.0\Common.dll
 D:\Projects\EightQueens\EightQueens\EightQueens.Logic\bin\Debug\netstandard2.0\Common.pdb
 D:\Projects\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.csproj.CopyComplete
+C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\bin\Debug\netstandard2.0\Common.dll
+C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\bin\Debug\netstandard2.0\Common.pdb
+C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.csprojAssemblyReference.cache
+C:\SoftUni\EightQueens\EightQueens\EightQueens.Logic\obj\Debug\netstandard2.0\EightQueens.Logic.csproj.CopyComplete

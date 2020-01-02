@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\
 EightQueens.WpfApplication
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\App.xaml
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\App.xaml
 3-1135654862
 
-8389573684
-194-1870112389
+81328673362
+194561785647
 MainWindow.xaml;Styles\Board.xaml;Views\EightQueensView.xaml;
 
-True
+False
 

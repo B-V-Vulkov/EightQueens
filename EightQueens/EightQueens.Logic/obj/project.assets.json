@@ -196,19 +196,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\borislav.valkov\\.nuget\\packages\\": {}
+    "C:\\Users\\vulko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj",
+      "projectUniqueName": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj",
       "projectName": "EightQueens.Logic",
-      "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj",
-      "packagesPath": "C:\\Users\\borislav.valkov\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\EightQueens\\EightQueens\\EightQueens.Logic\\obj\\",
+      "projectPath": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.Logic\\EightQueens.Logic.csproj",
+      "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
+      "outputPath": "C:\\SoftUni\\EightQueens\\EightQueens\\EightQueens.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\borislav.valkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vulko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -221,8 +221,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj": {
-              "projectPath": "D:\\Projects\\EightQueens\\EightQueens\\Common\\Common.csproj"
+            "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj": {
+              "projectPath": "C:\\SoftUni\\EightQueens\\EightQueens\\Common\\Common.csproj"
             }
           }
         }

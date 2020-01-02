@@ -48,3 +48,5 @@ D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcore
 D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\obj\Debug\netcoreapp3.1\EightQueens.WpfApplication.pdb
 D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\bin\Debug\netcoreapp3.1\EightQueens.Logic.dll
 D:\Projects\EightQueens\EightQueens\EightQueens.WpfApplication\bin\Debug\netcoreapp3.1\EightQueens.Logic.pdb
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\bin\Debug\netcoreapp3.1\EightQueens.Logic.dll
+C:\SoftUni\EightQueens\EightQueens\EightQueens.WpfApplication\bin\Debug\netcoreapp3.1\EightQueens.Logic.pdb
